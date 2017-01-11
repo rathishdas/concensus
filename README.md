@@ -12,11 +12,11 @@ A. Consensus generation using Phylogeny
 ./poa -read_fasta ../7864612.fa -clustal ../7864612_clustal.aln blosum80.mat -tolower -v
 Data Preparation:
 ----------------------------------
-Using samtools read the sequences of desired id number and save them.
+Using samtools read the sequences of desired id number and save them
 	samtools view -h m54113_160913_184949.subreads_sorted.bam | head -20000 | grep 7864612 | awk '{print $10}' > 7864612_tmp.fa
 	Here,
-		“M54113_160913_184949.subreads_sorted.bam” is ID sorted input ‘.bam’ file,
-		“7864612” is desired id number,
+		“M54113_160913_184949.subreads_sorted.bam” is ID sorted input ‘.bam’ file
+		“7864612” is desired id number
 		“7864612_tmp.fa” is the output file
 Convert that temporary file (i.e: “7864612_tmp.fa”) to a ‘.fa’ file using our “read_c_fa.cpp” file
 	./read_c_fa 7864612_tmp.fa 7864612.fa
@@ -63,7 +63,9 @@ Downloading Modified Unanimity:
  
 
 > rm -f ~/unanimity/src/ConsensusSettings.cpp
+
 > rm -f ~/unanimity/src/poa/PoaGraphTraversals.cpp
+
 > rm -f  ~/unanimity/include/pacbio/ccs/Consensus.h
 > rm -f ~/unanimity/src/main/ccs.cpp
 
