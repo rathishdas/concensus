@@ -27,10 +27,13 @@ Convert that temporary file (i.e: “7864612_tmp.fa”) to a ‘.fa’ file usin
 
 Generating Clustal alignment:
 ----------------------------------
-Please extract “poaV2.tar.gz” library or download the c implementation of POA library from here,
+Please extract “poaV2.tar.gz” library or download the c implementation of POA library from here:
 	https://sourceforge.net/projects/poamsa/
+	
 Compile the POA library via ‘make poa’ inside the directory.
+
 Generate the Clustal file using ‘poa’ executable.
+
 	./poa -read_fasta ../7864612.fa -clustal ../7864612_clustal.aln blosum80.mat -tolower
 Here, 
 “../7864612.fa” is input file 
