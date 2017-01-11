@@ -13,14 +13,21 @@ A. Consensus generation using Phylogeny
 Data Preparation:
 ----------------------------------
 Using samtools read the sequences of desired id number and save them
-	samtools view -h m54113_160913_184949.subreads_sorted.bam | head -20000 | grep 7864612 | awk '{print $10}' > 7864612_tmp.fa
-	Here,
+
+   samtools view -h m54113_160913_184949.subreads_sorted.bam | head -20000 | grep 7864612 | awk '{print $10}' > 7864612_tmp.fa
+      
+	Here
 		“M54113_160913_184949.subreads_sorted.bam” is ID sorted input ‘.bam’ file
+		
 		“7864612” is desired id number
+		
 		“7864612_tmp.fa” is the output file
+		
 Convert that temporary file (i.e: “7864612_tmp.fa”) to a ‘.fa’ file using our “read_c_fa.cpp” file
-	./read_c_fa 7864612_tmp.fa 7864612.fa
+
+   ./read_c_fa 7864612_tmp.fa 7864612.fa
 	Here, 
+	
 “7864612_tmp.fa” is input file
 “7864612.fa” is output file
 
