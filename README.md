@@ -9,7 +9,7 @@ B. Consensus generation using CCS
 A. Consensus generation using Phylogeny
 -------------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------
-./poa -read_fasta ../7864612.fa -clustal ../7864612_clustal.aln blosum80.mat -tolower -v
+
 Data Preparation:
 ----------------------------------
 Using samtools read the sequences of desired id number and save them
