@@ -3,8 +3,9 @@ computational biology. The most intuitive way to approach this problem is to per
 Alignment). There are several techniques of doing MSA. In this paper, we will represent two ways of generating
 consensus from the pacbio data.
 
-A. Consensus generation using Phylogeny
-B. Consensus generation using CCS
+A. Consensus generation using Phylogeny.
+
+B. Consensus generation using CCS.
 
 A. Consensus generation using Phylogeny
 -------------------------------------------------------------------------------------------------------------------
