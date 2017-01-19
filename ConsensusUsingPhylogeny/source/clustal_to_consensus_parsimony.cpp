@@ -13,8 +13,6 @@ using namespace std;
 #define INF         (1<<28)
 
 #define Min(a, b)   (a<b?a:b)
-#define debug(args...) {dbg,args; cerr<<endl;}
-struct debugger{template<typename T> debugger& operator , (const T& v){cerr<<v<<"\t"; return *this; }}dbg;
 
 double pScore[5][5];   // parsimony score
 map<char, int> cm;  // mapping character a, c, g, t, -
@@ -177,7 +175,7 @@ int main(int argc, char *argv[])
         // out("score", scr);
         sConcensus += indxToChar(scr);
     }
-    // debug("concensus: ", SZ(sConcensus));
+   
     consensus_f << ">" << argv[2] << endl;
     consensus_f << sConcensus << endl;
 
